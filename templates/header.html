@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <title>SUDOKU-SOLVER</title>
+
+   
+    <link href="{{url_for('static',filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+    <link  href="{{url_for('static',filename='font-awesome-4.5.0/css/font-awesome.min.css')}}" rel="stylesheet" >
+    <link href="{{url_for('static',filename = 'cs.css')}}" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700|Black+Ops+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+   
+    
+
+  </head>
+  <body>
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    
+      
+ 
+   
+ <header>
+ <nav class="navbar navbar-default fthdcol">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="#"><b style="font-family: 'Lobster', cursive;font-size:30px;color:white;">SUDOKU-SOLVER</b></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="menu">
+
+      <ul class="nav navbar-nav navbar-right">
+            
+            <li ><a href="/" title="HOME"><span class="glyphicon glyphicon-home hm"></span></a></li>
+            <li ><a href="https://github.com/sanjayreddy30/Sudoku-Solver" title="SOURCE CODE"><span class="glyphicon glyphicon-pencil hm"></span></a></li>
+         
+             
+        
+      </ul>
+      
+      
+    </div><!-- /.navbar-collapse -->
+    
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+ 
+{%block body%}
+
+{%endblock%}
+
+
+     
+
+  
+    <nav class="navbar navbar-default navbar-fixed-bottom fthdcol">
+      <div class="container-fluid">
+        <p class="navbar-text pd">DEVELOPED BY:<a href="https://github.com/ayush1997/">AYUSH (GITHUB)</a></p>
+      </div>
+    </nav>
+  
+
+
+<!-- Modal -->
+
+   
+
+   
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{url_for('static',filename = 'js/bootstrap.min.js')}}"></script>
+   
+  </body>
+</html>
