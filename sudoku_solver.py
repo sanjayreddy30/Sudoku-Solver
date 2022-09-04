@@ -92,7 +92,9 @@ def isitSafe(num,row,colmn):
 def is_sudoku_unsolvable():
 	for row in range(0,9):
 		for colmn in range(0,9):
-			print isitSafe(grid[row][colmn],row,colmn)
+			# print(isitSafe(grid[row][colmn],sep=",")
+			# print(row, sep = ",")
+			# print(col)
 			if grid[row][colmn] != 0 and not isitSafe(grid[row][colmn],row,colmn):
 				
 				return True
@@ -104,34 +106,27 @@ def find_unassigned():
 				return [row,colmn]
 	return []
 
-def printsud():
-	for i in range(9):
-		for j in range(9):
-			print grid[i][j],
-		print
+# def printsud():
+# 	for i in range(9):
+# 		for j in range(9):
+# 		# 	print(grid[i][j], sep=',')
+# 		# print()
 
 def run():
 	for i in range(9):
 		for j in range(9):
 			grid[i][j] = int(grid[i][j])
-	#print grid
-	
-	#print sudoku_unsolvable()
-
 	
 	if is_sudoku_unsolvable():
 		return grid
+	
 	else:
 
 		if solvesudoku():
-			
-			#printsud()
 			return grid 
-
+		
 		else:
-			print "not solvable"
-
-
+			print("not solvable")
 
 
 
